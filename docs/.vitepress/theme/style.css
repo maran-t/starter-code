@@ -1,0 +1,40 @@
+/* DEEP override sidebar styles using :root and deep selector */
+
+:root {
+  --vp-sidebar-bg-color: #ffffff; /* Your custom sidebar background */
+  --vp-c-text-1: #1a1a1a; /* Text color */
+}
+
+.VPNavBar .title span {
+  font-size: 24px;
+    letter-spacing: 2px;
+    margin-top: 14px;
+}
+
+/* Optional: make link colors darker or branded */
+.VPSidebar .VPLink {
+  color: #333 !important;
+}
+
+.VPSidebar .VPLink:hover {
+  color: #007bff !important;
+}
+
+.VPNavBarAppearance {
+  display: none !important;
+}
+
+.VPNavBarTitle.has-sidebar .title {
+  box-shadow: none !important;
+  border-bottom: none !important;
+}
+
+.VPNavBar.has-sidebar .divider {
+  /* box-shadow: none !important;
+  border-bottom: none !important; */
+  width: 0px !important;
+}
+
+.VPSidebar {
+  margin-top: 16px !important;
+}
